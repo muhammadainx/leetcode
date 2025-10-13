@@ -1,8 +1,11 @@
 """
 Approach:
+Use two pointers — `i` to iterate and `n` as the last valid index.
+When nums[i] == val, swap it with nums[n] and decrease n (to skip the removed element).
+Otherwise, move i forward. Return i as the new length.
 
-Time: O() 
-Space: O()
+Time: O(n)   # each element is processed at most once
+Space: O(1)  # in-place modification
 """
 
 from typing import List
